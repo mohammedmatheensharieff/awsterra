@@ -1,21 +1,21 @@
 variable "aws_region" {
   description = "The AWS region to deploy resources."
-  default     = "ap-south-1"
+  type        = string
 }
 
 variable "vpc_cidr_block" {
   description = "CIDR block for the VPC."
-  default     = "10.0.0.0/16"
+  type        = string
 }
 
 variable "subnet_cidr_block_1" {
   description = "CIDR block for the first private subnet."
-  default     = "10.0.1.0/24"
+  type        = string
 }
 
 variable "subnet_cidr_block_2" {
   description = "CIDR block for the second private subnet."
-  default     = "10.0.2.0/24"
+  type        = string
 }
 
 variable "subnet_cidr_block_public_1" {
@@ -25,17 +25,17 @@ variable "subnet_cidr_block_public_1" {
 
 variable "ami_id" {
   description = "The ID of the AMI to use for the EC2 instance."
-  default     = "ami-03f4878755434977f"  
+  type        = string 
 }
 
 variable "instance_type" {
   description = "The instance type for the EC2 instance."
-  default     = "t2.micro"
+  type        = string
 }
 
 variable "db_engine" {
   description = "The database engine for the RDS instance."
-  default     = "mysql"
+  type        = string
 }
 
 variable "db_engine_version" {
@@ -45,15 +45,15 @@ variable "db_engine_version" {
 
 variable "db_instance_class" {
   description = "The instance class for the RDS instance."
-  default     = "db.t2.micro"
+  type        = string
 }
 
 variable "db_username" {
   description = "The username for accessing the RDS instance."
-  default     = "admin"
+  type        = string
 }
 
 variable "db_password" {
   description = "The password for accessing the RDS instance."
-  default     = "Zomat173838"
+  type        = string
 }
